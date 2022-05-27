@@ -368,7 +368,6 @@ function test_continuous_callback(cb, g, dg!;only_backsolve=false)
   @test du01 ≈ -adj_sol[1:2,end]
   @test dp1 ≈ adj_sol[3:4,end]
 
-
   # adj_prob = ODEAdjointProblem(sol_track,InterpolatingAdjoint(),dg!,sol_track.t,nothing,
   # 						 callback = cb2,
   # 						 abstol=abstol,reltol=reltol)
